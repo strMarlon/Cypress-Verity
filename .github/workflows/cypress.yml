@@ -34,17 +34,15 @@ jobs:
         run: |
           npx cypress run --spec "cypress/e2e/api/validateScenarioPositive.cy.js,cypress/e2e/api/validateScenarioNegative.cy.js"
 
-      # Upload dos relatórios como artefato no GitHub Actions
       - name: Upload Test Reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report
           path: cypress/reports/html
 
-      # Upload de Screenshots e Vídeos (se houver falha)
       - name: Upload Screenshots and Videos
         if: failure()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-assets
           path: |
