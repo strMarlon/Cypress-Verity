@@ -33,12 +33,3 @@ jobs:
       - name: Run Cypress tests
         run: |
           npx cypress run --spec "cypress/e2e/api/validateScenarioPositivo.cy.js,cypress/e2e/api/validateScenarioNegative.cy.js" --reporter mochawesome
-
-      # Caso queira armazenar relatórios adicionais (por exemplo, screenshots ou vídeos)
-      - name: Upload Screenshots and Videos
-        uses: actions/upload-artifact@v2
-        with:
-          name: cypress-assets
-          path: |
-            cypress/screenshots
-            cypress/videos
