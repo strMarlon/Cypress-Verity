@@ -33,18 +33,3 @@ jobs:
       - name: Run Cypress tests
         run: |
           npx cypress run --spec "cypress/e2e/api/validateScenarioPositive.cy.js,cypress/e2e/api/validateScenarioNegative.cy.js"
-
-      - name: Upload Test Reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: mochawesome-report
-          path: cypress/reports/html
-
-      - name: Upload Screenshots and Videos
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: cypress-assets
-          path: |
-            cypress/screenshots
-            cypress/videos
