@@ -34,13 +34,6 @@ jobs:
         run: |
           npx cypress run --spec "cypress/e2e/api/validateScenarioPositivo.cy.js,cypress/e2e/api/validateScenarioNegative.cy.js" --reporter mochawesome
 
-      # Gerar artefato de relatório
-      - name: Upload test reports
-        uses: actions/upload-artifact@v2
-        with:
-          name: cypress-reports
-          path: cypress/reports/  # Ajuste se o diretório do relatório for diferente
-
       # Caso queira armazenar relatórios adicionais (por exemplo, screenshots ou vídeos)
       - name: Upload Screenshots and Videos
         uses: actions/upload-artifact@v2
