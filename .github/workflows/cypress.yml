@@ -32,4 +32,4 @@ jobs:
       # Executar os testes com Cypress (incluindo os arquivos 'arquivo1' e 'arquivo2')
       - name: Run Cypress tests
         run: |
-          npx cypress run --spec "cypress/e2e/api/validateScenarioPositivo.cy.js,cypress/e2e/api/validateScenarioNegative.cy.js" --reporter mochawesome
+          npx cypress run --spec "cypress/e2e/api/validateScenarioPositivo.cy.js,cypress/e2e/api/validateScenarioNegative.cy.js"
