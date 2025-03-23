@@ -14,7 +14,7 @@ Este projeto contém testes automatizados para a API RESTful do ServeRest, garan
 
 1. Clone do repositório:
     ```
-    git clone https://github.com/strMarlon/Cypress-Verity
+    git clone git@github.com:strMarlon/Cypress-Verity.git
     ```
 
 2. Entre no diretório do projeto:
