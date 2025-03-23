@@ -114,29 +114,6 @@ Segue a explicação da estrutura de pastas e arquivos da raiz do projeto que fo
     npx cypress open
     ```
 
-
-## 📝 Gerando relatórios Allure
-
-- Android local
-    ```
-    npm run allure-android-local
-    ```
-
-- iOS local
-    ```
-    npm run allure-ios-local
-    ```
-
-- Android BrowserStack
-    ```
-    npm run alure-android-browserstack
-    ```
-
-- iOS BrowserStack
-    ```
-    npm run alure-iOS-browserstack
-    ```
-
 ## 📝 Pipeline CI/CD
 
-Este projeto usa o GitLab CI para automação dos testes. A configuração do pipeline está no arquivo .gitlab-ci.yml.
+Este projeto usa o GitHub CI para automação dos testes. A configuração do pipeline está no arquivo cypress.yml.
