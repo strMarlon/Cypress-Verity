@@ -26,7 +26,7 @@ describe('Requisições Serverest', () => {
             failOnStatusCode: false,
             body: {
                 nome: faker.internet.username(),
-                email: 'Marlon@QA.com.br',
+                email: 'beltrano@qa.com.br',
                 password: 'teste',
                 administrador: 'true',
             },
